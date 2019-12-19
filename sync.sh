@@ -57,7 +57,7 @@ git_commit(){
             mkdir docker
             cp -a /tmp/docker/* docker/
             cat>Dockerfile<<-EOF
-                FROM alpine
+                FROM zhangguanzhang/alpine
                 COPY docker/* /root/
 EOF
             docker build -t $status_image_name .
@@ -227,7 +227,7 @@ main(){
     mkdir docker
     cp -a /tmp/docker/* docker/
     cat>Dockerfile<<-EOF
-        FROM alpine
+        FROM zhangguanzhang/alpine
         COPY docker/* /root/
 EOF
     docker build -t $status_image_name .
