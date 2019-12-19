@@ -3,7 +3,7 @@
 [ -n "$DEBUG" ] && set -x
 max_process=$1
 MY_REPO=liuepng0518
-status_image_name=liuepng0518/quay-data
+status_image_name=liupeng0518/quay-data
 interval=.
 : ${max_per:=70} ${push_time:=45}
 
