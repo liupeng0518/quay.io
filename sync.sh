@@ -2,7 +2,7 @@
 
 [ -n "$DEBUG" ] && set -x
 max_process=$1
-MY_REPO=liuepng0518
+MY_REPO=liupeng0518
 status_image_name=liupeng0518/quay-data
 interval=.
 : ${max_per:=70} ${push_time:=45}
@@ -18,9 +18,9 @@ hub_check_name=/tmp/docker/hub_check.name
 
 git_init(){
     git config --global user.name "Sam"
-    git config --global user.email liuepng0518@gmail.com
+    git config --global user.email liupeng0518@gmail.com
     git remote rm origin
-    git remote add origin git@github.com:liuepng0518/quay.io.git
+    git remote add origin git@github.com:liupeng0518/quay.io.git
     git pull
     if git branch -a |grep 'origin/develop' &> /dev/null ;then
         git checkout develop
